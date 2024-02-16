@@ -1,26 +1,50 @@
 <div align="center">
-  <h1>🗣️ Curso de IA Generativa y Modelos de Lenguaje Grandes (LLM)</h1>
+  <h1>🤖 Curso de IA Generativa y Modelos de Lenguaje Grandes (LLMs)</h1>
   <p align="center">
-    🐦 <a href="https://twitter.com/nicolasmetallo">seguime en X</a> • 
-    💻 <a href="https://www.machinelearnear.com/">machinelearnear</a> • 
-    📹 <a href="https://www.youtube.com/@machinelearnear">youtube </a> • 
+    🐦 <a href="https://twitter.com/nicolasmetallo">twitter</a> • 
+    💻 <a href="https://www.machinelearnear.com/">web</a> • 
+    📹 <a href="https://www.youtube.com/@machinelearnear">youtube</a> • 
     💻 <a href="https://github.com/mlabonne/llm-course">repo original de @mlabonne</a>
   </p>
 </div>
 <br/>
 
 >[!NOTE]  
->todo este laburo se basa en el [repo de @mlabonne](https://github.com/mlabonne/llm-course), **vayan a meterle una ⭐!**
+>todo este laburo se basa en el [repo de @mlabonne](https://github.com/mlabonne/llm-course), **vayan a meterle una ⭐ ya mismo!**
 
 Este curso de IA generativa y LLMs va a estar dividido en 3 partes:
 
-1. 🧩 **Fundamentos de LLM** cubre conocimientos esenciales sobre matemáticas, Python y redes neuronales.
-2. 🧑‍🔬 **El Científico de LLM** se enfoca en construir los mejores LLMs posibles usando las técnicas más recientes.
-3. 👷 **El Ingeniero de LLM** se concentra en crear aplicaciones basadas en LLM y desplegarlas.
+1. 🧩 **Fundamentos de IA** cubre conocimientos esenciales sobre matemáticas, Python y redes neuronales.
+2. 🧑‍🔬 **Cientifico/a de LLMs** se enfoca en construir los mejores LLMs posibles usando las técnicas más recientes.
+3. 👷 **Ingeniero/a de LLMs** se concentra en crear aplicaciones basadas en LLM y desplegarlas.
 
-## 📝 Cuadernos
+## 📹 Videos
 
-Una lista de cuadernos y artículos relacionados con modelos de lenguaje grandes.
+Una lista de algunos videos que hice que tocan varios de estos temas
+
+| Titulo | Link |
+|----------|-------------|
+| Cómo es que funciona realmente Stable Diffusion? (Guia ilustrada paso a paso) | https://www.youtube.com/watch?v=00NV4EXcpLQ&ab_channel=machinelearnear |
+| Como crear ChatGPT desde 0 explicado | https://www.youtube.com/watch?v=4uXeflZ8q8w&ab_channel=machinelearnear |
+| Habilidades emergentes de GPT-3.5 | https://www.youtube.com/watch?v=TYFy0wZpJuY&ab_channel=machinelearnear |
+| Reinforcement Learning from Human Feedback | https://www.youtube.com/watch?v=tzPuVAJ3XoI&ab_channel=machinelearnear |
+| In-Context Learning & Gradient Descent | https://www.youtube.com/watch?v=TMYpH8wsGFU&ab_channel=machinelearnear |
+| Que hace que un agente de diálogo sea útil? | https://www.youtube.com/watch?v=DRf4j0EpYuQ&ab_channel=machinelearnear |
+| "Estado de GPT" por Andrej Karpathy | https://www.youtube.com/watch?v=aqv6Sd67R7M&ab_channel=machinelearnear |
+| Como las empresas crean aplicaciones con LLMs | https://www.youtube.com/watch?v=7YDxI66fySk&ab_channel=machinelearnear |
+| Tutorial para hacer una aplicación con GPT4, LangChain, Whisper, y otros | https://www.youtube.com/watch?v=1Rpn4lrshlo&ab_channel=machinelearnear |
+| Ingenieria de Prompts (Octubre 2023) | https://www.youtube.com/watch?v=21pUaHVlHaQ&ab_channel=machinelearnear |
+
+## 📝 Notebooks
+
+Una lista de notebooks y artículos relacionados con modelos de lenguaje grandes.
+
+| Titulo | Descripción | Link |
+|----------|-------------|----------|
+| 🧐 LLM AutoEval | Evalúa automáticamente tus LLMs usando RunPod | <img src="img/colab.svg" alt="Abrir en Colab"> |
+| 🥱 LazyMergekit | Fusiona modelos fácilmente usando mergekit en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
+| ⚡ AutoGGUF | Cuantiza LLMs en formato GGUF en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
+| 🌳 Árbol Genealógico de Modelos | Visualiza el árbol genealógico de modelos fusionados. | <img src="img/colab.svg" alt="Abrir en Colab"> |
 
 ### Herramientas
 
@@ -57,7 +81,7 @@ Una lista de cuadernos y artículos relacionados con modelos de lenguaje grandes
 | Mejorar ChatGPT con Grafos de Conocimiento | Amplía las respuestas de ChatGPT con grafos de conocimiento. | [Artículo](https://mlabonne.github.io/blog/posts/Article_Improve_ChatGPT_with_Knowledge_Graphs.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
 | Fusionar LLMs con mergekit | Crea tus propios modelos fácilmente, ¡no se necesita GPU! | [Artículo](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54) | <img src="img/colab.svg" alt="Abrir en Colab"> |
 
-## 🧩 Fundamentos de LLM
+## 🧩 Fundamentos de IA
 
 ### 1. Matemáticas para Aprendizaje Automático
 
