@@ -9,87 +9,86 @@
 </div>
 <br/>
 
->[!NOTE]  
->todo este laburo se basa en el [repo de @mlabonne](https://github.com/mlabonne/llm-course), **vayan a meterle una ⭐ ya mismo!**
-
 Este curso de IA generativa y LLMs va a estar dividido en 3 partes:
 
 1. 🧩 **Fundamentos de IA** cubre conocimientos esenciales sobre matemáticas, Python y redes neuronales.
 2. 🧑‍🔬 **Cientifico/a de LLMs** se enfoca en construir los mejores LLMs posibles usando las técnicas más recientes.
 3. 👷 **Ingeniero/a de LLMs** se concentra en crear aplicaciones basadas en LLM y desplegarlas.
 
+>[!NOTE]  
+>todo este laburo se basa en el [repo de @mlabonne](https://github.com/mlabonne/llm-course), **vayan a meterle una ⭐ ya mismo!**
+
 ## 📹 Videos
 
-Una lista de algunos videos que hice que tocan varios de estos temas
+Una lista de algunos videos que hice (`@machinelearnear`) que tocan varios de estos temas
 
-| Titulo | Link |
-|----------|-------------|
-| Cómo es que funciona realmente Stable Diffusion? (Guia ilustrada paso a paso) | https://www.youtube.com/watch?v=00NV4EXcpLQ&ab_channel=machinelearnear |
-| Como crear ChatGPT desde 0 explicado | https://www.youtube.com/watch?v=4uXeflZ8q8w&ab_channel=machinelearnear |
-| Habilidades emergentes de GPT-3.5 | https://www.youtube.com/watch?v=TYFy0wZpJuY&ab_channel=machinelearnear |
-| Reinforcement Learning from Human Feedback | https://www.youtube.com/watch?v=tzPuVAJ3XoI&ab_channel=machinelearnear |
-| In-Context Learning & Gradient Descent | https://www.youtube.com/watch?v=TMYpH8wsGFU&ab_channel=machinelearnear |
-| Que hace que un agente de diálogo sea útil? | https://www.youtube.com/watch?v=DRf4j0EpYuQ&ab_channel=machinelearnear |
-| "Estado de GPT" por Andrej Karpathy | https://www.youtube.com/watch?v=aqv6Sd67R7M&ab_channel=machinelearnear |
-| Como las empresas crean aplicaciones con LLMs | https://www.youtube.com/watch?v=7YDxI66fySk&ab_channel=machinelearnear |
-| Tutorial para hacer una aplicación con GPT4, LangChain, Whisper, y otros | https://www.youtube.com/watch?v=1Rpn4lrshlo&ab_channel=machinelearnear |
-| Ingenieria de Prompts (Octubre 2023) | https://www.youtube.com/watch?v=21pUaHVlHaQ&ab_channel=machinelearnear |
+- 📁 **Contenido**
+  - 📹 [Cómo es que funciona realmente Stable Diffusion? (Guia ilustrada paso a paso)](https://www.youtube.com/watch?v=00NV4EXcpLQ&ab_channel=machinelearnear)
+  - 📹 [Como crear ChatGPT desde 0 explicado](https://www.youtube.com/watch?v=4uXeflZ8q8w&ab_channel=machinelearnear)
+  - 📹 [Habilidades emergentes de GPT-3.5](https://www.youtube.com/watch?v=TYFy0wZpJuY&ab_channel=machinelearnear)
+  - 📹 [Reinforcement Learning from Human Feedback](https://www.youtube.com/watch?v=tzPuVAJ3XoI&ab_channel=machinelearnear)
+  - 📹 [In-Context Learning & Gradient Descent](https://www.youtube.com/watch?v=TMYpH8wsGFU&ab_channel=machinelearnear)
+  - 📹 [Que hace que un agente de diálogo sea útil?](https://www.youtube.com/watch?v=DRf4j0EpYuQ&ab_channel=machinelearnear)
+  - 📹 ["Estado de GPT" por Andrej Karpathy](https://www.youtube.com/watch?v=aqv6Sd67R7M&ab_channel=machinelearnear)
+  - 📹 [Como las empresas crean aplicaciones con LLMs](https://www.youtube.com/watch?v=7YDxI66fySk&ab_channel=machinelearnear)
+  - 📹 [Tutorial para hacer una aplicación con GPT4, LangChain, Whisper, y otros](https://www.youtube.com/watch?v=1Rpn4lrshlo&ab_channel=machinelearnear)
+  - 📹 [Ingenieria de Prompts (Octubre 2023)](https://www.youtube.com/watch?v=21pUaHVlHaQ&ab_channel=machinelearnear)
 
 ## 📝 Notebooks
 
-Una lista de notebooks y artículos relacionados con modelos de lenguaje grandes.
+Una lista de notebooks y artículos relacionados con modelos de lenguaje grandes. Nota: todos hechos por `@mlabonne`.
 
-| Titulo | Descripción | Link |
-|----------|-------------|----------|
-| 🧐 LLM AutoEval | Evalúa automáticamente tus LLMs usando RunPod | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 🥱 LazyMergekit | Fusiona modelos fácilmente usando mergekit en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| ⚡ AutoGGUF | Cuantiza LLMs en formato GGUF en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 🌳 Árbol Genealógico de Modelos | Visualiza el árbol genealógico de modelos fusionados. | <img src="img/colab.svg" alt="Abrir en Colab"> |
+- 📁 **Herramientas**
+  - 🧐 **LLM AutoEval** - Evalúa automáticamente tus LLMs usando RunPod. [Abrir en Colab](https://colab.research.google.com/)
+  - 🥱 **LazyMergekit** - Fusiona modelos fácilmente usando mergekit en un clic. [Abrir en Colab](https://colab.research.google.com/)
+  - ⚡ **AutoGGUF** - Cuantiza LLMs en formato GGUF en un click. [Abrir en Colab](https://colab.research.google.com/)
+  - 🌳 **Árbol genealógico de modelos** - Visualiza el árbol genealógico de modelos fusionados. [Abrir en Colab](https://colab.research.google.com/)
 
-### Herramientas
+- 🎛 **Afinamiento**
+  - 🧐 **Afinar Llama-2 en Google Colab** - Guía paso a paso para afinar tu primer modelo Llama 2. [Artículo](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - 🥱 **Afinar LLMs con Axolotl** - Guía de principio a fin para la herramienta de vanguardia para afinamiento. [Artículo](https://mlabonne.github.io/blog/posts/A_Beginners_Guide_to_LLM_Finetuning.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - ⚡ **Afinar Mistral-7b con DPO** - Mejora el rendimiento de modelos afinados supervisados con DPO. [Artículo](https://medium.com/towards-data-science/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac) | [Abrir en Colab](https://colab.research.google.com/)
 
-| Cuaderno | Descripción | Cuaderno |
-|----------|-------------|----------|
-| 🧐 LLM AutoEval | Evalúa automáticamente tus LLMs usando RunPod | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 🥱 LazyMergekit | Fusiona modelos fácilmente usando mergekit en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| ⚡ AutoGGUF | Cuantiza LLMs en formato GGUF en un clic. | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 🌳 Árbol Genealógico de Modelos | Visualiza el árbol genealógico de modelos fusionados. | <img src="img/colab.svg" alt="Abrir en Colab"> |
+- 💾 **Cuantización**
+  - 1️⃣ **Introducción a la cuantización** - Optimización de LLMs usando cuantización de 8 bits. [Artículo](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - 2️⃣ **Cuantización de 4 bits usando GPTQ** - Cuantiza tus propios LLMs de código abierto. [Artículo](https://mlabonne.github.io/blog/4bit_quantization/) | [Abrir en Colab](https://colab.research.google.com/)
+  - 3️⃣ **Cuantización con GGUF y `llama.cpp`** - Llama 2 con llama.cpp y sube versiones GGUF al HF Hub. [Artículo](https://mlabonne.github.io/blog/posts/Quantize_Llama_2_models_using_ggml.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - 4️⃣ **ExLlamaV2** - Cuantiza y corre modelos EXL2 y súbelos al HF Hub. [Artículo](https://mlabonne.github.io/blog/posts/ExLlamaV2_The_Fastest_Library_to_Run%C2%A0LLMs.html) | [Abrir en Colab](https://colab.research.google.com/)
 
-### Afinamiento
+- 📚 **Otros**
+  - 📖 **Estrategias de decodificación en LLMs** - Una guía para la generación de texto desde la búsqueda por haz hasta el muestreo de núcleo. [Artículo](https://mlabonne.github.io/blog/posts/2022-06-07-Decoding_strategies.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - 🌐 **Visualizar el paisaje de pérdida de GPT-2** - Gráfico 3D del paisaje de pérdida basado en perturbaciones de peso. [Tweet](https://twitter.com/maximelabonne/status/1667618081844219904) | [Abrir en Colab](https://colab.research.google.com/)
+  - 🚀 **Mejorar ChatGPT con grafos de conocimiento** - Amplía las respuestas de ChatGPT con grafos de conocimiento. [Artículo](https://mlabonne.github.io/blog/posts/Article_Improve_ChatGPT_with_Knowledge_Graphs.html) | [Abrir en Colab](https://colab.research.google.com/)
+  - 🛠 **Fusionar LLMs con `mergekit`** - Crea tus propios modelos fácilmente, ¡no se necesita GPU! [Artículo](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54) | [Abrir en Colab](https://colab.research.google.com/)
 
-| Cuaderno | Descripción | Artículo | Cuaderno |
-|---------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Afinar Llama 2 en Google Colab | Guía paso a paso para afinar tu primer modelo Llama 2. | [Artículo](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| Afinar LLMs con Axolotl | Guía de principio a fin para la herramienta de vanguardia para afinamiento. | [Artículo](https://mlabonne.github.io/blog/posts/A_Beginners_Guide_to_LLM_Finetuning.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| Afinar Mistral-7b con DPO | Mejora el rendimiento de modelos afinados supervisados con DPO. | [Artículo](https://medium.com/towards-data-science/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac) | <img src="img/colab.svg" alt="Abrir en Colab"> |
+## 🧩 Roadmap para aprender los fundamentos de IA
 
-### Cuantización
+```
+📁
+├── 📚 Matemáticas para el aprendizaje automático
+│   ├── 🧮 Álgebra lineal
+│   ├── 🔢 Cálculo
+│   └── 📊 Probabilidad y estadística
+├── 🐍 Python para el aprendizaje automático
+│   ├── 💻 Fundamentos de Python
+│   └── 📊 Bibliotecas de ciencia de datos
+├── 🧠 Redes neuronales
+│   ├── 📖 Fundamentos
+│   ├── ⚙️ Entrenamiento y optimización
+│   └── ⚠️ Sobreajuste
+└── 💬 Procesamiento de lenguaje natural
+    ├── 📝 Preprocesamiento de texto
+    ├── ✨ Técnicas de extracción de características
+    ├── 🪄 Representaciones de palabras
+    └── 🔄 Redes neuronales recurrentes (RNN)
+```
+### Matemáticas para aprendizaje automático
 
-| Cuaderno | Descripción | Artículo | Cuaderno |
-|---------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1. Introducción a la Cuantización | Optimización de modelo de lenguaje grande usando cuantización de 8 bits. | [Artículo](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 2. Cuantización de 4 bits usando GPTQ | Cuantiza tus propios LLMs de código abierto para correrlos en hardware de consumidor. | [Artículo](https://mlabonne.github.io/blog/4bit_quantization/) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 3. Cuantización con GGUF y llama.cpp | Cuantiza modelos Llama 2 con llama.cpp y sube versiones GGUF al HF Hub. | [Artículo](https://mlabonne.github.io/blog/posts/Quantize_Llama_2_models_using_ggml.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| 4. ExLlamaV2: La Biblioteca Más Rápida para Correr LLMs | Cuantiza y corre modelos EXL2 y súbelos al HF Hub. | [Artículo](https://mlabonne.github.io/blog/posts/ExLlamaV2_The_Fastest_Library_to_Run%C2%A0LLMs.html) | <img src="img/colab.svg"alt="Abrir en Colab"> |
+Antes de dominar el aprendizaje automático (ML o machine learning), es importante entender los conceptos matemáticos fundamentales que impulsan estos algoritmos.
 
-### Otros
-
-| Cuaderno | Descripción | Artículo | Cuaderno |
-|---------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Estrategias de Decodificación en Modelos de Lenguaje Grandes | Una guía para la generación de texto desde la búsqueda por haz hasta el muestreo de núcleo | [Artículo](https://mlabonne.github.io/blog/posts/2022-06-07-Decoding_strategies.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| Visualizando el Paisaje de Pérdida de GPT-2 | Gráfico 3D del paisaje de pérdida basado en perturbaciones de peso. | [Tweet](https://twitter.com/maximelabonne/status/1667618081844219904) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| Mejorar ChatGPT con Grafos de Conocimiento | Amplía las respuestas de ChatGPT con grafos de conocimiento. | [Artículo](https://mlabonne.github.io/blog/posts/Article_Improve_ChatGPT_with_Knowledge_Graphs.html) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-| Fusionar LLMs con mergekit | Crea tus propios modelos fácilmente, ¡no se necesita GPU! | [Artículo](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54) | <img src="img/colab.svg" alt="Abrir en Colab"> |
-
-## 🧩 Fundamentos de IA
-
-### 1. Matemáticas para Aprendizaje Automático
-
-Antes de dominar el aprendizaje automático, es importante entender los conceptos matemáticos fundamentales que impulsan estos algoritmos.
-
-- **Álgebra Lineal**: Esto es crucial para entender muchos algoritmos, especialmente aquellos usados en aprendizaje profundo. Conceptos clave incluyen vectores, matrices, determinantes, valores y vectores propios, espacios vectoriales y transformaciones lineales.
+- **Álgebra lineal**: Esto es crucial para entender muchos algoritmos, especialmente aquellos usados en aprendizaje profundo (deep learning). Conceptos clave incluyen vectores, matrices, determinantes, valores y vectores propios, espacios vectoriales y transformaciones lineales.
 - **Cálculo**: Muchos algoritmos de aprendizaje automático involucran la optimización de funciones continuas, lo que requiere un entendimiento de derivadas, integrales, límites y series. El cálculo multivariable y el concepto de gradientes también son importantes.
-- **Probabilidad y Estadística**: Estos son cruciales para entender cómo los modelos aprenden de datos y hacen predicciones. Conceptos clave incluyen teoría de probabilidad, variables aleatorias, distribuciones de probabilidad, expectativas, varianza, covarianza, correlación, pruebas de hipótesis, intervalos de confianza, estimación de máxima verosimilitud e inferencia Bayesiana.
+- **Probabilidad y estadística**: Estos son cruciales para entender cómo los modelos aprenden de datos y hacen predicciones. Conceptos clave incluyen teoría de probabilidad, variables aleatorias, distribuciones de probabilidad, expectativas, varianza, covarianza, correlación, pruebas de hipótesis, intervalos de confianza, estimación de máxima verosimilitud e inferencia Bayesiana.
 
 📚 Recursos:
 
@@ -103,14 +102,14 @@ Antes de dominar el aprendizaje automático, es importante entender los concepto
 
 ---
 
-### 2. Python para Aprendizaje Automático
+### Python para aprendizaje automático
 
-Python es un lenguaje de programación poderoso y flexible que es particularmente bueno para el aprendizaje automático, gracias a su legibilidad, consistencia y el robusto ecosistema de bibliotecas de ciencia de datos.
+Python es un lenguaje de programación poderoso y flexible que es particularmente bueno para el aprendizaje automático, gracias a su legibilidad, consistencia y el robusto ecosistema de librerías de ciencia de datos.
 
 - **Fundamentos de Python**: Programar en Python requiere un buen entendimiento de la sintaxis básica, tipos de datos, manejo de errores y programación orientada a objetos.
-- **Bibliotecas de Ciencia de Datos**: Incluye familiaridad con NumPy para operaciones numéricas, Pandas para manipulación y análisis de datos, Matplotlib y Seaborn para visualización de datos.
-- **Preprocesamiento de Datos**: Esto involucra escalado y normalización de características, manejo de datos faltantes, detección de valores atípicos, codificación de datos categóricos y división de datos en conjuntos de entrenamiento, validación y prueba.
-- **Bibliotecas de Aprendizaje Automático**: Proficiencia con Scikit-learn, una biblioteca que proporciona una amplia selección de algoritmos de aprendizaje supervisado y no supervisado, es vital. Entender cómo implementar algoritmos como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, vecinos más cercanos (K-NN) y agrupamiento por K-medias es importante. Técnicas de reducción de dimensionalidad como PCA y t-SNE también son útiles para visualizar datos de alta dimensión.
+- **Librerías de ciencia de datos**: Incluye familiaridad con `NumPy` para operaciones numéricas, `Pandas` para manipulación y análisis de datos, `Matplotlib` y `Seaborn` para visualización de datos.
+- **Pre-procesamiento de datos**: Esto involucra escalado y normalización de características (features), manejo de datos faltantes, detección de valores atípicos (outliers), codificación de datos categóricos y división de datos en conjuntos de entrenamiento, validación y prueba.
+- **Librerías de aprendizaje automático**: Saber usar `Scikit-learn`, una biblioteca que proporciona una amplia selección de algoritmos de aprendizaje supervisado y no supervisado, es vital. Entender cómo implementar algoritmos como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, vecinos más cercanos (K-NN) y agrupamiento por K-medias es importante. Técnicas de reducción de dimensionalidad como PCA y t-SNE también son útiles para visualizar datos de alta dimensión.
 
 📚 Recursos:
 
@@ -122,14 +121,14 @@ Python es un lenguaje de programación poderoso y flexible que es particularment
 
 ---
 
-### 3. Redes Neuronales
+### Redes neuronales
 
 Las redes neuronales son una parte fundamental de muchos modelos de aprendizaje automático, particularmente en el ámbito del aprendizaje profundo. Para utilizarlas efectivamente, es esencial tener un entendimiento comprensivo de su diseño y mecánicas.
 
 - **Fundamentos**: Esto incluye entender la estructura de una red neuronal como capas, pesos, sesgos y funciones de activación (sigmoide, tanh, ReLU, etc.)
-- **Entrenamiento y Optimización**: Familiarízate con la retropropagación y diferentes tipos de funciones de pérdida, como Error Cuadrático Medio (MSE) y Entropía Cruzada. Entiende varios algoritmos de optimización como Descenso de Gradiente, Descenso de Gradiente Estocástico, RMSprop y Adam.
-- **Sobreajuste**: Entender el concepto de sobreajuste (donde un modelo rinde bien en datos de entrenamiento pero pobremente en datos no vistos) y aprender varias técnicas de regularización (abandono, regularización L1/L2, detención temprana, aumento de datos) para prevenirlo.
-- **Implementar un Perceptrón Multicapa (MLP)**: Construye un MLP, también conocido como una red completamente conectada, usando PyTorch.
+- **Entrenamiento y optimización**: Familiarízate con la retropropagación y diferentes tipos de funciones de pérdida, como Error Cuadrático Medio (MSE) y Entropía Cruzada. Entiende varios algoritmos de optimización como Descenso de Gradiente, Descenso de Gradiente Estocástico, RMSprop y Adam.
+- **Sobreajuste (over-fitting)**: Entender el concepto de sobreajuste (donde un modelo rinde bien en datos de entrenamiento pero pobremente en datos no vistos) y aprender varias técnicas de regularización (abandono, regularización L1/L2, detención temprana, aumento de datos) para prevenirlo.
+- **Implementar un perceptrón multicapa (MLP)**: Construye un `MLP`, también conocido como una red completamente conectada (fully-connected network), usando `PyTorch`.
 
 📚 Recursos:
 
@@ -140,14 +139,14 @@ Las redes neuronales son una parte fundamental de muchos modelos de aprendizaje 
 
 ---
 
-### 4. Procesamiento de Lenguaje Natural (NLP)
+### Procesamiento de lenguaje natural (NLP)
 
 NLP es una rama fascinante de la inteligencia artificial que cierra la brecha entre el lenguaje humano y la comprensión de las máquinas. Desde el procesamiento de texto simple hasta la comprensión de matices lingüísticos, NLP juega un papel crucial en muchas aplicaciones como traducción, análisis de sentimientos, chatbots y mucho más.
 
-- **Preprocesamiento de Texto**: Aprende varios pasos de preprocesamiento de texto como tokenización (dividir texto en palabras o frases), stemming (reducir palabras a su forma raíz), lematización (similar al stemming pero considera el contexto), eliminación de palabras vacías, etc.
-- **Técnicas de Extracción de Características**: Familiarízate con técnicas para convertir datos de texto en un formato que pueda ser entendido por algoritmos de aprendizaje automático. Los métodos clave incluyen Bolsa de palabras (BoW), Frecuencia de Término - Inversa de Frecuencia de Documentos (TF-IDF) y n-gramas.
-- **Embeddings de Palabras**: Los embeddings de palabras son un tipo de representación de palabras que permite que palabras con significados similares tengan representaciones similares. Los métodos clave incluyen Word2Vec, GloVe y FastText.
-- **Redes Neuronales Recurrentes (RNNs)**: Entiende el funcionamiento de RNNs, un tipo de red neuronal diseñada para trabajar con datos secuenciales. Explora LSTMs y GRUs, dos variantes de RNN que son capaces de aprender dependencias a largo plazo.
+- **Preprocesamiento de texto**: Aprende varios pasos de preprocesamiento de texto como tokenización (dividir texto en palabras o frases), stemming (reducir palabras a su forma raíz), lematización (similar al stemming pero considera el contexto), eliminación de palabras vacías, etc.
+- **Técnicas de extracción de características**: Familiarízate con técnicas para convertir datos de texto en un formato que pueda ser entendido por algoritmos de aprendizaje automático. Los métodos clave incluyen "bolsa de palabras" (BoW), "frecuencia de término", inversa de frecuencia de documentos (`TF-IDF`) y n-gramas.
+- **Embeddings de palabras**: Los embeddings de palabras son un tipo de representación de palabras que permite que palabras con significados similares tengan representaciones similares. Los métodos clave incluyen `Word2Vec`, `GloVe` y `FastText`.
+- **Redes neuronales recurrentes (RNNs)**: Entiende el funcionamiento de RNNs, un tipo de red neuronal diseñada para trabajar con datos secuenciales. Explora LSTMs y GRUs, dos variantes de RNN que son capaces de aprender dependencias a largo plazo.
 
 📚 Recursos:
 
