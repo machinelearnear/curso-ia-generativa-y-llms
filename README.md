@@ -12,13 +12,17 @@
 Este curso de IA generativa y LLMs va a estar dividido en 3 partes:
 
 1. 🧩 **Fundamentos de IA** cubre conocimientos esenciales sobre matemáticas, Python y redes neuronales.
-2. 🧑‍🔬 **Cientifico/a de LLMs** se enfoca en construir los mejores LLMs posibles usando las técnicas más recientes.
+2. 🧑‍🔬 **Científico/a de LLMs** se enfoca en construir los mejores LLMs posibles usando las técnicas más recientes.
 3. 👷 **Ingeniero/a de LLMs** se concentra en crear aplicaciones basadas en LLM y desplegarlas.
 
 >[!NOTE]  
 >todo este laburo se basa en el [repo de @mlabonne](https://github.com/mlabonne/llm-course), **vayan a meterle una ⭐ ya mismo!**
 
-## 📹 Videos
+## 📹 Clases en video
+
+... proximamente ...
+
+## 📹 Videos random
 
 Una lista de algunos videos que hice ([@machinelearnear](https://www.youtube.com/@machinelearnear)) que tocan varios de estos temas
 
@@ -335,45 +339,80 @@ La cuantización es el proceso de convertir los pesos (y activaciones) de un mod
 * [Mix de expertos explicado](https://huggingface.co/blog/moe) por Hugging Face: Guía exhaustiva sobre MoEs y cómo funcionan.
 * [Modelos multimodales grandes](https://huyenchip.com/2023/10/10/multimodal.html) por Chip Huyen: Visión general de sistemas multimodales y la historia reciente de este campo.
 
-## 👷 El Ingeniero de LLM
+## 👷 Roadmap para ser ingeniero/a de LLMs
 
-Esta sección del curso se enfoca en aprender cómo construir aplicaciones potenciadas por LLM que puedan usarse en producción, con un enfoque en aumentar modelos y desplegarlos.
+Esta sección del curso se enfoca en aprender cómo construir aplicaciones potenciadas por LLM que puedan usarse en producción, con un enfoque en aumentar modelos y desplegarlos a escala.
 
-![](img/roadmap_engineer.png)
+```
+📁
+├── 🚀 Corriendo LLMs
+│   ├── 🌐 APIs de LLM
+│   ├── 📖 LLMs de código abierto
+│   ├── 💡 Ingeniería de prompts
+│   └── 📐 Estructuración de salidas
+├── 🗂 Creando bases de datos vectoriales
+│   ├── 📥 Ingesta de documentos
+│   ├── ✂️ División de documentos
+│   ├── 🧬 Modelos de embedding
+│   └── 🗃 Bases de datos vectoriales
+├── 🤖 Retrieval augmented generation (generación aumentada por recuperación)
+│   ├── 🎛 Orquestadores
+│   ├── 🔍 Retrievers
+│   ├── 🧠 Memoria
+│   └── 📋 Evaluación
+├── ⚙️ RAG avanzado
+│   ├── 📝 Construcción de consultas
+│   ├── 🛠 Agentes y herramientas
+│   └── 🔄 Post-procesamiento
+├── 🚄 Optimización de inferencia
+│   ├── ⚡ Flash attention
+│   ├── 🗝 Caché de key-value
+│   └── 🔮 Decodificación especulativa
+├── 📡 Desplegando LLMs
+│   ├── 🏠 Despliegue local
+│   ├── 🎮 Despliegue de un prototipo
+│   ├── 🖥 Despliegue en un servidor
+│   └── 🌐 Despliegue en edge
+└── 🔒 Asegurando LLMs
+    ├── 🎣 Hacking de prompts
+    ├── 🚧 Barreras de seguridad (guardrails)
+    ├── 🚪 Puertas traseras
+    └── 🛡 Medidas defensivas
+```
 
-### 1. Ejecutando LLMs
+### Corriendo LLMs
 
-Ejecutar LLMs puede ser difícil debido a los altos requisitos de hardware. Dependiendo de tu caso de uso, podrías querer simplemente consumir un modelo a través de una API (como GPT-4) o ejecutarlo localmente. En cualquier caso, técnicas adicionales de prompting y guía pueden mejorar y restringir la salida para tus aplicaciones.
+Ejecutar LLMs puede ser difícil debido a los altos requisitos de hardware. Dependiendo de tu caso de uso, podrías querer simplemente consumir un modelo a través de una API (como `GPT-4`) o ejecutarlo localmente. En cualquier caso, técnicas adicionales de prompting y alineamiento pueden mejorar y restringir los outputs para tus aplicaciones.
 
-* **APIs de LLM**: Las APIs son una manera conveniente de desplegar LLMs. Este espacio está dividido entre LLMs privados ([OpenAI](https://platform.openai.com/), [Google](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview), [Anthropic](https://docs.anthropic.com/claude/reference/getting-started-with-the-api), [Cohere](https://docs.cohere.com/docs), etc.) y LLMs de código abierto ([OpenRouter](https://openrouter.ai/), [Hugging Face](https://huggingface.co/inference-api), [Together AI](https://www.together.ai/), etc.).
+* **APIs de LLM**: Las APIs son una manera conveniente de desplegar LLMs. Este espacio está dividido entre LLMs privados o propietarios ([OpenAI](https://platform.openai.com/), [Google](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview), [Anthropic](https://docs.anthropic.com/claude/reference/getting-started-with-the-api), [Cohere](https://docs.cohere.com/docs), etc.) y LLMs de código abierto ([OpenRouter](https://openrouter.ai/), [Hugging Face](https://huggingface.co/inference-api), [Together AI](https://www.together.ai/), etc.).
 * **LLMs de código abierto**: El [Hugging Face Hub](https://huggingface.co/models) es un excelente lugar para encontrar LLMs. Puedes ejecutar algunos de ellos directamente en [Hugging Face Spaces](https://huggingface.co/spaces), o descargarlos y ejecutarlos localmente en aplicaciones como [LM Studio](https://lmstudio.ai/) o a través de la CLI con [llama.cpp](https://github.com/ggerganov/llama.cpp) o [Ollama](https://ollama.ai/).
 * **Ingeniería de prompts**: Técnicas comunes incluyen prompting de cero disparos, prompting de pocos disparos, cadena de pensamiento y ReAct. Funcionan mejor con modelos más grandes, pero pueden adaptarse a modelos más pequeños.
-* **Estructurando salidas**: Muchas tareas requieren una salida estructurada, como una plantilla estricta o un formato JSON. Bibliotecas como [LMQL](https://lmql.ai/), [Outlines](https://github.com/outlines-dev/outlines), [Guidance](https://github.com/guidance-ai/guidance), etc. pueden usarse para guiar la generación y respetar una estructura dada.
+* **Estructurando outputs (resultados del modelo)**: Muchas tareas requieren un output estructurado, como una plantilla estricta o un formato `JSON`. Librerías como [LMQL](https://lmql.ai/), [Outlines](https://github.com/outlines-dev/outlines), [Guidance](https://github.com/guidance-ai/guidance), etc. pueden usarse para guiar la generación y respetar una estructura dada.
 
 📚 **Referencias**:
-* [Ejecuta un LLM localmente con LM Studio](https://www.kdnuggets.com/run-an-llm-locally-with-lm-studio) por Nisha Arya: Guía corta sobre cómo usar LM Studio.
+* [Ejecutá un LLM localmente con LM Studio](https://www.kdnuggets.com/run-an-llm-locally-with-lm-studio) por Nisha Arya: Guía corta sobre cómo usar LM Studio.
 * [Guía de ingeniería de prompts](https://www.promptingguide.ai/) por DAIR.AI: Lista exhaustiva de técnicas de prompts con ejemplos.
-* [Outlines - Inicio rápido](https://outlines-dev.github.io/outlines/quickstart/): Lista de técnicas de generación guiada habilitadas por Outlines.
-* [LMQL - Visión general](https://lmql.ai/docs/language/overview.html): Introducción al lenguaje LMQL.
+* [Outlines, Inicio rápido](https://outlines-dev.github.io/outlines/quickstart/): Lista de técnicas de generación guiada habilitadas por Outlines.
+* [LMQL, Resúmen](https://lmql.ai/docs/language/overview.html): Introducción al lenguaje LMQL.
 
 ---
-### 2. Construyendo un Almacenamiento de Vectores
+### Creando una base de datos vectorial
 
-Crear un almacenamiento de vectores es el primer paso para construir una tubería de Generación Aumentada por Recuperación (RAG). Los documentos se cargan, se dividen y los fragmentos relevantes se usan para producir representaciones vectoriales (incrustaciones) que se almacenan para su uso futuro durante la inferencia.
+Crear un almacenamiento de vectores es el primer paso para construir un pipeline de **Generación Aumentada por Recuperación** ("Retrieval Augmented Generation", RAG). Los documentos se ingestan, se dividen (split) y los fragmentos relevantes se usan para producir representaciones vectoriales (embeddings) que se almacenan para su uso futuro durante la inferencia.
 
-* **Ingesta de documentos**: Los cargadores de documentos son envoltorios convenientes que pueden manejar muchos formatos: PDF, JSON, HTML, Markdown, etc. También pueden recuperar datos directamente de algunas bases de datos y APIs (GitHub, Reddit, Google Drive, etc.).
+* **Ingesta de documentos**: Los cargadores de documentos son wrappers convenientes que pueden manejar muchos formatos: `PDF`, `JSON`, `HTML`, `Markdown`, etc. También pueden traer datos directamente de algunas bases de datos y APIs (GitHub, Reddit, Google Drive, etc.).
 * **División de documentos**: Los divisores de texto descomponen los documentos en fragmentos más pequeños, semánticamente significativos. En lugar de dividir el texto después de *n* caracteres, a menudo es mejor dividir por encabezado o recursivamente, con algunos metadatos adicionales.
-* **Modelos de incrustación**: Los modelos de incrustación convierten el texto en representaciones vectoriales. Permite una comprensión más profunda y matizada del lenguaje, esencial para realizar búsquedas semánticas.
-* **Bases de datos vectoriales**: Las bases de datos vectoriales (como [Chroma](https://www.trychroma.com/), [Pinecone](https://www.pinecone.io/), [Milvus
+* **Modelos de embeddings**: Los modelos de embeddings convierten el texto en representaciones vectoriales. Permite una comprensión más profunda y matizada del lenguaje, esencial para realizar búsquedas semánticas.
+* **Bases de datos vectoriales**: Las bases de datos vectoriales (como [Chroma](https://www.trychroma.com/), [Pinecone](https://www.pinecone.io/), [Milvus](https://milvus.io/), [FAISS](https://faiss.ai/), [Annoy](https://github.com/spotify/annoy), etc.) están diseñadas para almacenar vectores de embeddings. Nos permiten traer, de forma eficiente, información qué es "más similar" a una consulta hecha al modelo basado en la similitud que tenemos entre vectores.
 
 📚 **Referencias**:
-* [LangChain - Divisores de texto](https://python.langchain.com/docs/modules/data_connection/document_transformers/): Lista de diferentes divisores de texto implementados en LangChain.
-* [Biblioteca de Transformadores de Oraciones](https://www.sbert.net/): Biblioteca popular para modelos de incrustación.
-* [Tablero de Líderes MTEB](https://huggingface.co/spaces/mteb/leaderboard): Tablero de líderes para modelos de incrustación.
+* [LangChain, divisores de texto](https://python.langchain.com/docs/modules/data_connection/document_transformers/): Lista de diferentes divisores de texto implementados en LangChain.
+* [Librería de SentenceTransformers](https://www.sbert.net/): Biblioteca popular para modelos de embeddings.
+* [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard): Leaderboard para modelos de embeddings.
 * [Las 5 Mejores Bases de Datos Vectoriales](https://www.datacamp.com/blog/the-top-5-vector-databases) por Moez Ali: Una comparación de las mejores y más populares bases de datos vectoriales.
 
 ---
-### 3. Generación Aumentada por Recuperación (RAG)
+### Generación aumentada por recuperación (RAG)
 
 Con RAG, los LLMs recuperan documentos contextuales de una base de datos para mejorar la precisión de sus respuestas. RAG es una forma popular de aumentar el conocimiento del modelo sin necesidad de afinamiento adicional.
 
@@ -383,90 +422,84 @@ Con RAG, los LLMs recuperan documentos contextuales de una base de datos para me
 * **Evaluación**: Necesitamos evaluar tanto la recuperación de documentos (precisión y recall del contexto) como las etapas de generación (fidelidad y relevancia de la respuesta). Se puede simplificar con herramientas como [Ragas](https://github.com/explodinggradients/ragas/tree/main) y [DeepEval](https://github.com/confident-ai/deepeval).
 
 📚 **Referencias**:
-* [Llamaindex - Conceptos de alto nivel](https://docs.llamaindex.ai/en/stable/getting_started/concepts.html): Conceptos principales a conocer al construir tuberías RAG.
-* [Pinecone - Augmentación de Recuperación](https://www.pinecone.io/learn/series/langchain/langchain-retrieval-augmentation/): Visión general del proceso de augmentación de recuperación.
-* [LangChain - Q&A con RAG](https://python.langchain.com/docs/use_cases/question_answering/quickstart): Tutorial paso a paso para construir una típica tubería RAG.
-* [LangChain - Tipos de memoria](https://python.langchain.com/docs/modules/memory/types/): Lista de diferentes tipos de memorias con usos relevantes.
-* [Pipeline RAG - Métricas](https://docs.ragas.io/en/stable/concepts/metrics/index.html): Visión general de las principales métricas utilizadas para evaluar tuberías RAG.
+* [Llamaindex, conceptos de alto nivel](https://docs.llamaindex.ai/en/stable/getting_started/concepts.html): Conceptos principales a conocer al construir tuberías RAG.
+* [Pinecone, aumento de recuperación](https://www.pinecone.io/learn/series/langchain/langchain-retrieval-augmentation/): Visión general del proceso de augmentación de recuperación.
+* [LangChain, Q&A con RAG](https://python.langchain.com/docs/use_cases/question_answering/quickstart): Tutorial paso a paso para construir una típica tubería RAG.
+* [LangChain, tipos de memoria](https://python.langchain.com/docs/modules/memory/types/): Lista de diferentes tipos de memorias con usos relevantes.
+* [Pipeline RAG, métricas](https://docs.ragas.io/en/stable/concepts/metrics/index.html): Resúmen general de las principales métricas utilizadas para evaluar pipeline RAG.
 
 ---
-### 4. RAG Avanzado
+### RAG Avanzado
 
-Las aplicaciones de la vida real pueden requerir tuberías complejas, incluyendo bases de datos SQL o de grafos, así como la selección automática de herramientas y APIs relevantes. Estas técnicas avanzadas pueden mejorar una solución base y proporcionar características adicionales.
+Aplicaciones en producción pueden requerir pipelines complejos, incluyendo bases de datos SQL o de grafos, así como la selección automática de herramientas y APIs relevantes. Estas técnicas avanzadas pueden mejorar una solución base y proporcionar características adicionales.
 
-* **Construcción de consultas**: Los datos estructurados almacenados en bases de datos tradicionales requieren un lenguaje de consulta específico como SQL, Cypher, metadatos, etc. Podemos traducir directamente la instrucción del usuario en una consulta para acceder a los datos con la construcción de consultas.
+* **Construcción de consultas/queries**: Los datos estructurados almacenados en bases de datos tradicionales requieren un lenguaje de consulta específico como SQL, Cypher, metadatos, etc. Podemos traducir directamente la instrucción del usuario en una consulta para acceder a los datos con la construcción de consultas.
 * **Agentes y herramientas**: Los agentes aumentan los LLMs seleccionando automáticamente las herramientas más relevantes para proporcionar una respuesta. Estas herramientas pueden ser tan simples como usar Google o Wikipedia, o más complejas como un intérprete de Python o Jira.
 * **Post-procesamiento**: Paso final que procesa las entradas que se alimentan al LLM. Mejora la relevancia y diversidad de los documentos recuperados con reordenamiento, [RAG-fusión](https://github.com/Raudaschl/rag-fusion), y clasificación.
 
 📚 **Referencias**:
-* [LangChain - Construcción de Consultas](https://blog.langchain.dev/query-construction/): Publicación de blog sobre diferentes tipos de construcción de consultas.
-* [LangChain - SQL](https://python.langchain.com/docs/use_cases/qa_structured/sql): Tutorial sobre cómo interactuar con bases de datos SQL con LLMs, involucrando Texto-a-SQL y un agente SQL opcional.
-* [Pinecone - Agentes LLM](https://www.pinecone.io/learn/series/langchain/langchain-agents/): Introducción a agentes y herramientas con diferentes tipos.
-* [Agentes Autónomos Potenciados por LLM](https://lilianweng.github.io/posts/2023-06-23-agent/) por Lilian Weng: Artículo más teórico sobre agentes LLM.
-* [LangChain - RAG de OpenAI](https://blog.langchain.dev/applying-openai-rag/): Visión general de las estrategias RAG empleadas por OpenAI, incluyendo post-procesamiento.
+* [LangChain, construcción de consultas/queries](https://blog.langchain.dev/query-construction/): Posteo sobre diferentes tipos de construcción de consultas.
+* [LangChain, SQL](https://python.langchain.com/docs/use_cases/qa_structured/sql): Tutorial sobre cómo interactuar con bases de datos SQL con LLMs, involucrando Texto-a-SQL y un agente SQL opcional.
+* [Pinecone, agentes LLM](https://www.pinecone.io/learn/series/langchain/langchain-agents/): Introducción a agentes y herramientas con diferentes tipos.
+* [Agentes autónomos potenciados por LLM](https://lilianweng.github.io/posts/2023-06-23-agent/) por Lilian Weng: Artículo más teórico sobre agentes LLM.
+* [LangChain, RAG de OpenAI](https://blog.langchain.dev/applying-openai-rag/): Visión general de las estrategias RAG empleadas por OpenAI, incluyendo post-procesamiento.
 
 ---
-### 5. Optimización de la Inferencia
+### Optimización de la inferencia de un modelo
 
 La generación de texto es un proceso costoso que requiere hardware caro. Además de la cuantización, se han propuesto varias técnicas para maximizar el rendimiento y reducir los costos de inferencia.
 
-* **Atención Flash**: Optimización del mecanismo de atención para transformar su complejidad de cuadrática a lineal, acelerando tanto el entrenamiento como la inferencia.
-* **Caché de clave-valor**: Entiende el caché de clave-valor y las mejoras introducidas en la [Atención de Múltiples Consultas](https://arxiv.org/abs/1911.02150) (MQA) y la [Atención de Consultas Agrupadas](https://arxiv.org/abs/2305.13245) (GQA).
+* **Flash attention**: Optimización del mecanismo de atención para transformar su complejidad de cuadrática a lineal, acelerando tanto el entrenamiento como la inferencia.
+* **Caché de key-value**: Entiende el caché de key-value y las mejoras introducidas en la [atención de múltiples consultas](https://arxiv.org/abs/1911.02150) (MQA) y la [atención de consultas agrupadas](https://arxiv.org/abs/2305.13245) (GQA).
 * **Decodificación especulativa**: Usa un modelo pequeño para producir borradores que luego son revisados por un modelo más grande para acelerar la generación de texto.
 
 📚 **Referencias**:
 * [Inferencia en GPU](https://huggingface.co/docs/transformers/main/en/perf_infer_gpu_one) por Hugging Face: Explica cómo optimizar la inferencia en GPUs.
 * [Inferencia de LLM](https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices) por Databricks: Mejores prácticas sobre cómo optimizar la inferencia de LLM en producción.
-* [Optimizando LLMs para Velocidad y Memoria](https://huggingface.co/docs/transformers/main/en/llm_tutorial_optimization) por Hugging Face: Explica tres técnicas principales para optimizar velocidad y memoria, a saber, cuantización, Atención Flash e innovaciones arquitectónicas.
-* [Generación Asistida](https://huggingface.co/blog/assisted-generation) por Hugging Face: Versión de Hugging Face de la decodificación especulativa, es un post interesante sobre cómo funciona con código para implementarlo.
+* [Optimizando LLMs para velocidad y memoria](https://huggingface.co/docs/transformers/main/en/llm_tutorial_optimization) por Hugging Face: Explica tres técnicas principales para optimizar velocidad y memoria, a saber, cuantización, Atención Flash e innovaciones arquitectónicas.
+* [Generación asistida](https://huggingface.co/blog/assisted-generation) por Hugging Face: Versión de Hugging Face de la decodificación especulativa, es un post interesante sobre cómo funciona con código para implementarlo.
 
 ---
-### 6. Desplegando LLMs
+### Desplegando LLMs
 
 Desplegar LLMs a escala es una hazaña de ingeniería que puede requerir múltiples clústeres de GPUs. En otros escenarios, demos y aplicaciones locales pueden lograrse con mucha menor complejidad.
 
 * **Despliegue local**: La privacidad es una ventaja importante que los LLMs de código abierto tienen sobre los privados. Servidores LLM locales ([LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/), [oobabooga](https://github.com/oobabooga/text-generation-webui), [kobold.cpp](https://github.com/LostRuins/koboldcpp), etc.) capitalizan esta ventaja para potenciar aplicaciones locales.
-* **Despliegue de demostraciones**: Marcos como [Gradio](https://www.gradio.app/) y [Streamlit](https://docs.streamlit.io/) son útiles para prototipar aplicaciones y compartir demos. También puedes alojarlos fácilmente en línea, por ejemplo, usando [Hugging Face Spaces](https://huggingface.co/spaces).
-* **Despliegue de servidores**: Desplegar LLMs a escala requiere infraestructura en la nube (ver también [SkyPilot](https://skypilot.readthedocs.io/en/latest/)) o local y a menudo aprovecha marcos de generación de texto optimizados como [TGI](https://github.com/huggingface/text-generation-inference), [vLLM](https://github.com/vllm-project/vllm/tree/main), etc.
-* **Despliegue en el borde**: En entornos restringidos, marcos de alto rendimiento como [MLC LLM](https://github.com/mlc-ai/mlc-llm) y [mnn-llm](https://github.com/wangzhaode/mnn-llm/blob/master/README_en.md) pueden desplegar LLMs en navegadores web, Android e iOS.
+* **Despliegue de un prototipo**: Frameworks como [Gradio](https://www.gradio.app/) y [Streamlit](https://docs.streamlit.io/) son útiles para prototipar aplicaciones y compartir demos. También puedes alojarlos fácilmente en línea, por ejemplo, usando [Hugging Face Spaces](https://huggingface.co/spaces).
+* **Despliegue en un servidor**: Desplegar LLMs a escala requiere infraestructura en la nube (ver también [SkyPilot](https://skypilot.readthedocs.io/en/latest/)) o local y a menudo aprovecha frameworks de generación de texto optimizados como [TGI](https://github.com/huggingface/text-generation-inference), [vLLM](https://github.com/vllm-project/vllm/tree/main), etc.
+* **Despliegue en el edge**: En entornos restringidos, frameworks de alto rendimiento como [MLC LLM](https://github.com/mlc-ai/mlc-llm) y [mnn-llm](https://github.com/wangzhaode/mnn-llm/blob/master/README_en.md) pueden desplegar LLMs en navegadores web, Android, e iOS.
 
 📚 **Referencias**:
-* [Streamlit - Construye una aplicación LLM básica](https://docs.streamlit.io/knowledge-base/tutorials/build-conversational-apps): Tutorial para hacer una app básica tipo ChatGPT usando Streamlit.
-* [Contenedor de Inferencia LLM de HF](https://huggingface.co/blog/sagemaker-huggingface-llm): Despliega LLMs en Amazon SageMaker usando el contenedor de inferencia de Hugging Face.
-* [Blog de Philschmid](https://www.philschmid.de/) por Philipp Schmid: Colección de artículos de alta calidad sobre despliegue de LLMs usando Amazon SageMaker.
+* [Streamlit, construye una aplicación LLM básica](https://docs.streamlit.io/knowledge-base/tutorials/build-conversational-apps): Tutorial para hacer una app básica tipo ChatGPT usando Streamlit.
+* [Contenedor Docker de inferencia LLM de HF](https://huggingface.co/blog/sagemaker-huggingface-llm): Despliega LLMs en Amazon SageMaker usando el contenedor de inferencia de Hugging Face.
+* [Blog](https://www.philschmid.de/) por Philipp Schmid: Colección de artículos de alta calidad sobre despliegue y ajuste fino de LLMs.
 * [Optimizando la latencia](https://hamel.dev/notes/llm/inference/03_inference.html) por Hamel Husain: Comparación de TGI, vLLM, CTranslate2 y mlc en términos de rendimiento y latencia.
 
 ---
-### 7. Asegurando LLMs
+### Haciendo a los LLMs mas seguros
 
-Además de los problemas de seguridad tradicionales asociados con el software, los LLMs tienen debilidades únicas debido a la forma en que son entrenados y solicitados.
+Además de los problemas de seguridad tradicionales asociados con el software, los LLMs tienen debilidades únicas debido a la forma en que son entrenados y consultados.
 
-* **Hackeo de prompts**: Diferentes técnicas relacionadas con la ingeniería de prompts, incluyendo inyección de prompts (instrucción adicional para secuestrar la respuesta del modelo), filtración de datos/prompts (recuperar sus datos/prompts originales), y jailbreaking (crear prompts para eludir características de seguridad).
+* **Hackeo de prompts**: Diferentes técnicas relacionadas con la ingeniería de prompts, incluyendo inyección de prompts (instrucción adicional para modificar la respuesta del modelo), filtración de datos/prompts (recuperar sus datos/prompts originales), y jailbreaking (crear prompts para eludir características de seguridad).
 * **Puertas traseras**: Los vectores de ataque pueden apuntar al propio conjunto de datos de entrenamiento, envenenando los datos de entrenamiento (por ejemplo, con información falsa) o creando puertas traseras (disparadores secretos para cambiar el comportamiento del modelo durante la inferencia).
 * **Medidas defensivas**: La mejor manera de proteger tus aplicaciones LLM es probarlas contra estas vulnerabilidades (por ejemplo, usando equipos rojos y controles como [garak](https://github.com/leondz/garak/)) y observarlas en producción (con un marco como [langfuse](https://github.com/langfuse/langfuse)).
 
 📚 **Referencias**:
 * [OWASP Top 10 para aplicaciones de LLM](https://owasp.org/www-project-top-10-for-large-language-model-applications/) por HEGO Wiki: Lista de las 10 vulnerabilidades críticas más vistas en aplicaciones LLM.
-* [Primer sobre Inyección de Prompts](https://github.com/jthack/PIPE) por Joseph Thacker: Guía corta dedicada a la inyección de prompts para ingenieros.
-* [Seguridad LLM](https://llmsecurity.net/) por [@llm_sec](https://twitter.com/llm_sec): Lista extensiva de recursos relacionados con la seguridad LLM.
-* [Equipos rojos en LLMs](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming) por Microsoft: Guía sobre cómo realizar equipos rojos con LLMs.
+* [Inyección de prompts](https://github.com/jthack/PIPE) por Joseph Thacker: Guía corta dedicada a la inyección de prompts para ingenieros.
+* [Seguridad en LLMs](https://llmsecurity.net/) por [@llm_sec](https://twitter.com/llm_sec): Lista extensiva de recursos relacionados con la seguridad LLM.
+* [Equipos rojos (red teaming) en LLMs](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming) por Microsoft: Guía sobre cómo realizar equipos rojos con LLMs.
 
 ---
-## Acknowledgements
+## Reconocimientos
 
-This roadmap was inspired by the excellent [DevOps Roadmap](https://github.com/milanm/DevOps-Roadmap) from Milan Milanović and Romano Roth.
+Este roadmap está inspirado fuertemente (robado) del roadmap que hizo Maxime Labonne ([twitter](https://twitter.com/maximelabonne) & [github](https://github.com/mlabonne))
 
-Special thanks to:
-
-* Thomas Thelen for motivating me to create a roadmap
-* André Frade for his input and review of the first draft
-* Dino Dunn for providing resources about LLM security
-
-*Disclaimer: I am not affiliated with any sources listed here.*
+*Disclaimer: No estoy afiliado con ninguna institución mencionada acá.*
 
 ---
 <p align="center">
-  <a href="https://star-history.com/#machinelearnear/curso-llm-generative-ai&Date">
-    <img src="https://api.star-history.com/svg?repos=machinelearnear/curso-llm-generative-ai&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#machinelearnear/curso-ia-generativa-y-llms&Date">
+    <img src="https://api.star-history.com/svg?repos=machinelearnear/curso-ia-generativa-y-llms&type=Date" alt="Star History Chart">
   </a>
 </p>
