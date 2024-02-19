@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🤖 Curso de IA Generativa y Modelos de Lenguaje Grandes (LLMs)</h1>
+  <h1>🤖 Curso de IA Generativa y Modelos de Lenguaje Grandes (LLMs) v0.1</h1>
   <p align="center">
     🐦 <a href="https://twitter.com/nicolasmetallo">twitter</a> • 
     💻 <a href="https://www.machinelearnear.com/">web</a> • 
@@ -26,7 +26,7 @@ Este curso de IA generativa y LLMs va a estar dividido en 3 partes:
 
 Una lista de algunos videos que hice ([@machinelearnear](https://www.youtube.com/@machinelearnear)) que tocan varios de estos temas
 
-- 📁 **Contenido**
+- 📁 **@machinelearnear**
   - 📹 [Cómo es que funciona realmente Stable Diffusion? (Guia ilustrada paso a paso)](https://www.youtube.com/watch?v=00NV4EXcpLQ&ab_channel=machinelearnear)
   - 📹 [Como crear ChatGPT desde 0 explicado](https://www.youtube.com/watch?v=4uXeflZ8q8w&ab_channel=machinelearnear)
   - 📹 [Habilidades emergentes de GPT-3.5](https://www.youtube.com/watch?v=TYFy0wZpJuY&ab_channel=machinelearnear)
@@ -37,6 +37,36 @@ Una lista de algunos videos que hice ([@machinelearnear](https://www.youtube.com
   - 📹 [Como las empresas crean aplicaciones con LLMs](https://www.youtube.com/watch?v=7YDxI66fySk&ab_channel=machinelearnear)
   - 📹 [Tutorial para hacer una aplicación con GPT4, LangChain, Whisper, y otros](https://www.youtube.com/watch?v=1Rpn4lrshlo&ab_channel=machinelearnear)
   - 📹 [Ingenieria de Prompts (Octubre 2023)](https://www.youtube.com/watch?v=21pUaHVlHaQ&ab_channel=machinelearnear)
+
+Y acá otra colección de excelentes videos tocando varios temas de IA generativa y LLMs.
+
+- 📁 **@otros**
+  - 📹 [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g&ab_channel=AndrejKarpathy)
+  - 📹 [Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy)
+  - 📹 [Training and deploying open-source large language models](https://www.youtube.com/watch?v=Ma4clS-IdhA&ab_channel=NielsRogge)
+  - 📹 [Transformers demystified: how do ChatGPT, GPT-4, LLaMa work?](https://www.youtube.com/watch?v=C6ZszXYPDDw&ab_channel=NielsRogge)
+  - 📹 [LLM Bootcamp - Spring 2023](https://www.youtube.com/playlist?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ)
+  - 📹 [Stanford CS25 - Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)
+  - 📹 [EfficientML.ai Lecture, Fall 2023, MIT 6.5940](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB)
+  - 📹 [Natural Language Processing at UT Austin, 2023-2024 version (Greg Durrett)](https://www.youtube.com/playlist?list=PLofp2YXfp7TZZ5c7HEChs0_wfEfewLDs7)
+  - 📹 [Harvard CS50’s Introduction to Programming with Python – Full University Course](https://www.youtube.com/watch?v=nLRL_NcnK-4&ab_channel=freeCodeCamp.org)
+  - 📹 [MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+  - 📹 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+  - 📹 [Computer Vision in Practice](https://www.youtube.com/playlist?list=PLZCA39VpuaZajiCtgDDwU8ghchtqx347R)
+  - 📹 [UMass CS685: Advanced Natural Language Processing (Spring 2023)](https://www.youtube.com/playlist?list=PLWnsVgP6CzaelCF_jmn5HrpOXzRAPNjWj)
+  - 📹 [Stanford CS229: Machine Learning I Spring 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy)
+  - 📹 [Machine Learning Engineering for Production (MLOps)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6GMoA0wbpJLi3t34Gd8l0aK)
+  - 📹 [CMU Multimodal Machine Learning course (11-777), Fall 2022 semester](https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA)
+  - 📹 [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI)
+  - 📹 [Practical Deep Learning for Coders](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU)
+  - 📹 [Stanford CS224U: Natural Language Understanding | Spring 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rPt5D0zs3YhbWSZA8Q_DyiJ)
+  - 📹 [NYU Deep Learning Fall 2022](https://www.youtube.com/playlist?list=PLLHTzKZzVU9d_3TcHbyiAjl5qCbpJR-o0)
+  - 📹 [DeepMind x UCL | Deep Learning Lecture Series 2021](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm)
+  - 📹 [Stanford CS224N: Natural Language Processing with Deep Learning | Winter 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ)
+  - 📹 [DeepMind x UCL | Deep Learning Lecture Series 2020](https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF)
+  - 📹 [Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r)
+  - 📹 [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?app=desktop&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)
+  - 📹 [Statistics 110: Probability](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo)
 
 ## 📝 Notebooks
 
